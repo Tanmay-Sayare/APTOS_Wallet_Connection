@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { AptosClient, FaucetClient } from 'aptos';
+import { AptosClient } from 'aptos';
 import { Network, Unplug, Copy, CheckCircle } from 'lucide-react';
 
 const NODE_URL = 'https://fullnode.devnet.aptoslabs.com';
-const FAUCET_URL = 'https://faucet.devnet.aptoslabs.com';
+//const FAUCET_URL = 'https://faucet.devnet.aptoslabs.com';
 
 const aptosClient = new AptosClient(NODE_URL);
-const faucetClient = new FaucetClient(NODE_URL, FAUCET_URL);
+//const faucetClient = new FaucetClient(NODE_URL, FAUCET_URL);
 
 declare global {
   interface Window {
